@@ -83,6 +83,9 @@ help
 Exports are deliberately unencrypted and are never overwritten. Treat them as
 secrets and remove them securely after use.
 
+For a complete first-run walkthrough, command reference, backup guidance, and
+error reference, see [docs/usage.md](docs/usage.md).
+
 ## Testing and development
 
 ```sh
