@@ -1,0 +1,22 @@
+# Build and generated CMake files
+build/
+build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+Testing/
+
+# IDE and operating-system files
+.DS_Store
+.vscode/
+.idea/
+
+# Local vaults, exports, and test artifacts
+vault.dat
+*.vault
+*.pme
+*.export
+*.plaintext
+*.tmp
+passman-*.tar.gz
