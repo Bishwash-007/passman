@@ -2,16 +2,16 @@
 
 ## First run
 
-From the directory where you want the vault stored, run:
+Run `passman` from any directory:
 
 ```sh
 passman
 ```
 
-Passman prompts for a master password. If `vault.dat` does not exist in the
-current directory, it creates a new encrypted vault with owner-only file
-permissions. If it exists, Passman attempts to unlock it with the supplied
-password.
+Passman prompts for a master password. If
+`~/.local/share/passman/vault.dat` does not exist, it creates a new encrypted
+vault with owner-only file permissions. If it exists, Passman attempts to
+unlock it with the supplied password.
 
 Use a unique, high-entropy master password. Passman does not provide password
 recovery; losing it means losing access to the vault.
@@ -121,15 +121,15 @@ to unlock.
 
 ## Vault location
 
-The vault path is currently always:
+The vault is stored at:
 
 ```text
-./vault.dat
+~/.local/share/passman/vault.dat
 ```
 
-It is relative to the process's current working directory. Passman does not
+Passman creates the `~/.local/share/passman` directory when needed. It does not
 currently support a global configuration file or a command-line vault-path
-option. Do not run it from a directory writable by untrusted users.
+option.
 
 ## Backup and recovery
 

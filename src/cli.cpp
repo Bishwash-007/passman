@@ -41,7 +41,7 @@ namespace cli
 
         if (argc < 2)
         {
-            simpleArguments.command = Command::Help;
+            simpleArguments.command = Command::Interactive;
             return simpleArguments;
         }
 

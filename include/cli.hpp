@@ -18,6 +18,7 @@ enum class Command
     Import,
     Lock,
     Help,
+    Interactive,
     Invalid
 };
 

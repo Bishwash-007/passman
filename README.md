@@ -59,9 +59,9 @@ prefix's `bin` directory is on `PATH`.
 
 ## Usage
 
-Run `passman` from the directory containing the vault. The default vault path
-is `./vault.dat`; the current CLI intentionally does not read a global
-configuration file.
+Run `passman` from any directory. The default vault path is
+`~/.local/share/passman/vault.dat`; the directory is created automatically on
+first use.
 
 ```text
 passman --help

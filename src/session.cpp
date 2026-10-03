@@ -111,6 +111,9 @@ namespace session
             lock();
             break;
 
+        case cli::Command::Interactive:
+            break;
+
         case cli::Command::Invalid:
             break;
         }

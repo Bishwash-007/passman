@@ -15,10 +15,10 @@ namespace session
         ~Session();
 
         void run();
-
-    private:
         void processCommand(
             const cli::Arguments &arguments);
+
+    private:
 
         bool shouldAutoLock() const;
 
